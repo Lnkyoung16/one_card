@@ -26,3 +26,20 @@ if time_end > random_time:
 else:
     print("플레이어 승")
     print(time_end, "초가 걸렸습니다.")
+
+
+
+def card_shape_change(self):
+    card_shape = int(input("어느 모양으로 바꾸시겠습니까? 1:♠, 2:♣, 3:♥, 4:♦"))
+    card_shape = card_shape - 1
+    if card_shape == 0:
+        card_shape = "♠"
+    elif card_shape == 1:
+        card_shape = "♣"
+    elif card_shape == 2:
+        card_shape = "♥"
+    else:
+        card_shape = "♦"
+
+card = "♣4"
+card[1:]
